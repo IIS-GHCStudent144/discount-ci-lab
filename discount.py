@@ -15,10 +15,6 @@ def calculate_discounted_price(price, customer_type, coupon_code=None, is_holida
     return round(price, 2)
 
 
-def test_wrong_expected_value():
-    assert calculate_discounted_price(100, "premium") == 999.99
-
-
 SUPPORTED_COUPON_CODES = {
     "SAVE10": "10% off for all customers",
     "SAVE20": "20% off exclusively for premium customers",
