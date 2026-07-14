@@ -14,6 +14,7 @@ def calculate_discounted_price(price, customer_type, coupon_code=None, is_holida
         price = price * 0.95
     return round(price, 2)
 
+
 def test_wrong_expected_value():
     assert calculate_discounted_price(100, "premium") == 999.99
 
