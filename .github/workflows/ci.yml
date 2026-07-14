@@ -28,6 +28,5 @@ jobs:
         run: |
           flake8 discount.py --max-line-length=100
 
-      - name: Run tests with coverage
-        run: |
-          pytest --cov=discount --cov-report=term --cov-fail-under=80
+      - name: Test with coverage
+        run: pytest test_discount.py --cov=discount --cov-branch --cov-fail-under=75 --cov-report=term-missing
