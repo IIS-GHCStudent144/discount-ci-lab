@@ -18,3 +18,4 @@ SUPPORTED_COUPON_CODES = {
     "SAVE10": "10% off for all customers",
     "SAVE20": "20% off exclusively for premium customers",
 }
+
